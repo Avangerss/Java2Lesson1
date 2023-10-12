@@ -5,8 +5,8 @@ public class Main {
 
 
         Dog dog1 = new Dog("Туз", "Хаски", "Дать Лапу");
-        Dog dog2 = new Dog("Бобик", "Дворняга", "Серый", "Пушкина", "Лежать" );
-        Dog dog3 = new Dog("Рекс", "Овчарка", "Черный", "Гоголь", "Сидеть" );
+        Dog dog2 = new Dog("Бобик", "Дворняга", "Серый", "Пушкина", "Лежать");
+        Dog dog3 = new Dog("Рекс", "Овчарка", "Черный", "Гоголь", "Сидеть");
 
 
         ClassB objectA = new ClassB("Property A", 10);
@@ -63,20 +63,20 @@ public class Main {
         object3.print();
     }
 
-        public static Printable createObject (String className){
-            switch (className) {
-                case "ChildClass1":
-                    ChildClass1 object1 = new ChildClass1("Родительское свойство 1", 1);
-                    return object1;
-                case "ChildClass2":
-                    ChildClass2 object2 = new ChildClass2("Родительское свойство 2", 3.14);
-                    return object2;
-                case "ChildClass3":
-                    ChildClass3 object3 = new ChildClass3("Родительское свойство 3", true);
-                    return object3;
-                default:
-                    System.out.println("Некорректное имя класса!");
-                    return null;
-            }
+    public static Printable createObject(String className) {
+        switch (className) {
+            case "ChildClass1":
+                ChildClass1 object1 = new ChildClass1("Родительское свойство 1", 1);
+                return object1;
+            case "ChildClass2":
+                ChildClass2 object2 = new ChildClass2("Родительское свойство 2", 3.14);
+                return object2;
+            case "ChildClass3":
+                ChildClass3 object3 = new ChildClass3("Родительское свойство 3", true);
+                return object3;
+            default:
+                System.out.println("Некорректное имя класса!");
+                return null;
         }
     }
+}
