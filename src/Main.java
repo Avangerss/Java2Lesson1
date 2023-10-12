@@ -18,7 +18,6 @@ public class Main {
         Printable object2 = createObject("ChildClass2");
         Printable object3 = createObject("ChildClass3");
 
-
         dog1.printInfo();
         dog1.bark();
         dog1.makeVoice();
